@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Mvx.MvxImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                local:MvxBind="ImageUrl Result.volumeInfo.imageLinks.smallThumbnail"
+                android:layout_margin="5dp" />
+            <TextView
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.title" />
+            <TextView
+                android:text="Authors"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.authorSummary" />
+            <TextView
+                android:text="Publisher"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.publisher" />
+            <TextView
+                android:text="Published date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.publishedDate" />
+            <TextView
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.description" />
+            <TextView
+                android:text="Page count"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.pageCount" />
+            <TextView
+                android:text="Average rating"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.averageRating" />
+            <TextView
+                android:text="Ratings count"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.ratingsCount" />
+            <TextView
+                android:text="Language"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.language" />
+            <TextView
+                android:text="Preview link"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.previewLink" />
+            <TextView
+                android:text="Information link"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.infoLink" />
+            <TextView
+                android:text="Canonical volume link"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Result.volumeInfo.canonicalVolumeLink" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
